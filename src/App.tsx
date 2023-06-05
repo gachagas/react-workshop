@@ -1,14 +1,12 @@
 import "./App.css";
-import { useState } from "react";
+import PasswordGuesser from "./components/PasswordGuesser";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  console.log(count);
-
   return (
     <>
-      <h1 className="text-3xl font-bold underline bg-red-200">Hello world! Here be an edit new edit!John Doe</h1>
+      <div className="bg-slate-800 h-screen w-screen text-white">
+        <h1 className="p-5 text-3xl font-bold underline">Hello world! Here be an edit new edit!John Doe</h1>
+      </div>
     </>
   );
 }
