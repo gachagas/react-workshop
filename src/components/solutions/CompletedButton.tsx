@@ -13,19 +13,22 @@ const CompletedButton = ({ data, loggers, children }: CompletedButtonProps) => {
   return (
     <>
       {data.map((datum, index) => (
-        <div>
+        <div key={index}>
           <button
             onClick={() => {
               setSelectedIndex(index);
               console.log(index);
               loggers(datum);
             }}
-            className={`text-slate-100 w-[180px] ${selectedIndex === index ? "bg-slate-700" : "bg-slate-900"}`}
+            className={`text-white-800 bg-slate-700 w-[180px] ${
+              selectedIndex === index ? "opacity-60" : "opacity-100"
+            }`}
           >
             {datum} {children}
           </button>
         </div>
       ))}
+      {selectedIndex > -1 && <div>You selected {data[selectedIndex]}</div>}
     </>
   );
 };
