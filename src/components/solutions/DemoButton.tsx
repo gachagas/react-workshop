@@ -12,6 +12,7 @@ const CompletedButton = ({ data, loggers, children }: CompletedButtonProps) => {
 
   return (
     <>
+      {selectedIndex === 1 && <div>You selected the first index</div>}
       {data.map((datum, index) => (
         <div key={index}>
           <button
@@ -28,7 +29,6 @@ const CompletedButton = ({ data, loggers, children }: CompletedButtonProps) => {
           </button>
         </div>
       ))}
-      {selectedIndex > -1 && <div>You selected {data[selectedIndex]}</div>}
     </>
   );
 };
