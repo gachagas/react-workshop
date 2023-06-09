@@ -5,7 +5,7 @@ import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
-  
+
   return (
     <>
       <div>
@@ -43,3 +43,12 @@ function App() {
 }
 
 export default App;
+
+// Excercise Variables
+// const NAMES_A = ["Orange", "Blue", "Rose"];
+// const NAMES_B = ["Yellow", "Gray", "Pink"];
+// const NAMES_C = ["Red", "Purple", "Green"];
+
+// const COLORS_A = ["bg-orange-500", "bg-blue-300", "bg-rose-300"];
+// const COLORS_B = ["bg-yellow-300", "bg-slate-300", "bg-pink-400"];
+// const COLORS_C = ["bg-red-500", "bg-violet-400", "bg-green-300"];
