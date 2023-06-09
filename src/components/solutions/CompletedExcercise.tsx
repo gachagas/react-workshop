@@ -1,8 +1,5 @@
 import "./App.css";
-import CompletedButton from "./components/solutions/CompletedButton";
 import ExcerciseButton from "./components/solutions/ExcerciseButton";
-
-const GEMSTONES = ["Aquamarine", "Ruby", "Emerald", "Sapphire", "a"];
 
 const NAMES_A = ["Orange", "Blue", "Rose"];
 const NAMES_B = ["Yellow", "Gray", "Pink"];
