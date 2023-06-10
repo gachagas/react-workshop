@@ -9,6 +9,8 @@ export const ItemList = ({ dataX }: ListProps) => {
 
   const message = <div>There is nothing here</div>;
 
+  const youSelectedMessage = <div>You Selected Thingy</div>;
+
   const itemlist = dataX.map((datum, index) => (
     <button
       onClick={() => {
@@ -25,6 +27,7 @@ export const ItemList = ({ dataX }: ListProps) => {
     <>
       {dataX.length === 0 && message}
       {itemlist}
+      {selectedIndex > -1 ? dataX[selectedIndex] : null}
     </>
   );
 };

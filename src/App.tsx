@@ -1,5 +1,6 @@
 import "./App.css";
 import ExcerciseButton from "./components/solutions/ExcerciseButton";
+import { ItemList } from "./components/ItemList";
 
 const NAMES_A = ["Orange", "Blue", "Rose"];
 const NAMES_B = ["Yellow", "Gray", "Pink"];
@@ -12,7 +13,12 @@ const COLORS_C = ["bg-red-500", "bg-violet-400", "bg-green-300"];
 function App() {
   return (
     <>
-      <div className="flex flex-col gap-2"></div>
+      <div className="flex flex-col gap-2">
+        <ItemList
+          dataX={NAMES_A}
+          dataY={COLORS_A}
+        ></ItemList>
+      </div>
     </>
   );
 }
