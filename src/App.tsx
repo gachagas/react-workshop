@@ -1,15 +1,18 @@
-import { useState } from "react";
 import "./App.css";
+
+import { ItemList } from "./components/ItemList";
 
 function App() {
   return (
     <>
       <div className="flex flex-col gap-4">
-        <button>Blank Slate</button>
-        <button>Blank Slate</button>
-        <button>Blank Slate</button>
-        <button>Blank Slate</button>
-        <button>Blank Slate</button>
+        <ItemList></ItemList>
+
+        <ItemList></ItemList>
+        <ItemList></ItemList>
+        <ItemList></ItemList>
+        <ItemList></ItemList>
+        <ItemList></ItemList>
       </div>
     </>
   );
