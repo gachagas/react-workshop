@@ -1,22 +1,18 @@
 import "./App.css";
+import ExcerciseButton from "./components/solutions/ExcerciseButton";
 
-import { ItemList } from "./components/ItemList";
+const NAMES_A = ["Orange", "Blue", "Rose"];
+const NAMES_B = ["Yellow", "Gray", "Pink"];
+const NAMES_C = ["Red", "Purple", "Green"];
 
-const GEMSTONES = ["aqua", "ruby", "opal", "sapphire", "jade"];
-const BIRTHDAYS = ["Jan5", "Feb6", "Mar7"];
+const COLORS_A = ["bg-orange-500", "bg-blue-300", "bg-rose-300"];
+const COLORS_B = ["bg-yellow-300", "bg-slate-300", "bg-pink-400"];
+const COLORS_C = ["bg-red-500", "bg-violet-400", "bg-green-300"];
 
 function App() {
   return (
     <>
-      <div className="flex flex-col gap-4">
-        <ItemList dataX={GEMSTONES}></ItemList> //gemstones
-        <ItemList dataX={BIRTHDAYS}></ItemList> //birthdays
-        {/* <ItemList></ItemList>
-        <ItemList></ItemList>
-        <ItemList></ItemList>
-        <ItemList></ItemList>
-        <ItemList></ItemList> */}
-      </div>
+      <div className="flex flex-col gap-2"></div>
     </>
   );
 }
