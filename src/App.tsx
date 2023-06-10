@@ -18,6 +18,17 @@ function App() {
           dataX={NAMES_A}
           dataY={COLORS_A}
         ></ItemList>
+        <div>.................</div>
+        <ItemList
+          dataX={NAMES_B}
+          dataY={COLORS_B}
+        ></ItemList>
+        <div>.................</div>
+
+        <ItemList
+          dataX={NAMES_C}
+          dataY={COLORS_C}
+        ></ItemList>
       </div>
     </>
   );
