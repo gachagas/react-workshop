@@ -9,8 +9,11 @@ export const ItemList = () => {
 
   const itemlist = GEMSTONES.map((datum, index) => (
     <button
-      onClick={() => console.log(datum)}
-      className="bg-red-800"
+      onClick={() => {
+        setSelectedIndex(index);
+        console.log(datum);
+      }}
+      className={selectedIndex === index ? "bg-blue-400" : "bg-red-600"}
     >
       {datum}
     </button>
