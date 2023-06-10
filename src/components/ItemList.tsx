@@ -1,13 +1,15 @@
 import { useState } from "react";
 
-const GEMSTONES = ["aqua", "ruby", "opal", "sapphire", "jade"];
+interface ListProps {
+  dataX: string[];
+}
 
-export const ItemList = () => {
+export const ItemList = ({ dataX }: ListProps) => {
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   const message = <div>There is nothing here</div>;
 
-  const itemlist = GEMSTONES.map((datum, index) => (
+  const itemlist = dataX.map((datum, index) => (
     <button
       onClick={() => {
         setSelectedIndex(index);
@@ -21,7 +23,7 @@ export const ItemList = () => {
 
   return (
     <>
-      {GEMSTONES.length === 0 && message}
+      {dataX.length === 0 && message}
       {itemlist}
     </>
   );
