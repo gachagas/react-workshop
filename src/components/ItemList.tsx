@@ -2,9 +2,10 @@ import { useState } from "react";
 
 interface ListProps {
   dataX: string[];
+  dataY: string[];
 }
 
-export const ItemList = ({ dataX }: ListProps) => {
+export const ItemList = ({ dataX, dataY }: ListProps) => {
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   const message = <div>There is nothing here</div>;
