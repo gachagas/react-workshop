@@ -18,7 +18,7 @@ export const ItemList = ({ dataX, dataY }: ListProps) => {
         setSelectedIndex(index);
         console.log(datum);
       }}
-      className={selectedIndex === index ? "bg-blue-400" : "bg-red-600"}
+      className={selectedIndex === index ? "bg-blue-700" : dataY[index]}
     >
       {datum}
     </button>
